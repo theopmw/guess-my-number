@@ -1,7 +1,12 @@
 'use strict';
 
+// Generate random number between 1 & 20
 const secretNumber = Math.trunc(Math.random() * 20) + 1;
+
+// Set score to 20
 let score = 20;
+
+// Set text content of secret number
 document.querySelector('.number').textContent = secretNumber;
 
 document.querySelector('.check').addEventListener('click', function () {
